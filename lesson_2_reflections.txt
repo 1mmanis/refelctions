@@ -1,0 +1,5 @@
+Question1:	What happens when you initialize a repository? Why do you need to do it?
+Thoughts1:	It creates a folder and probably it´s metadata, that everything is configured for the repository.
+
+Question2:	How is the staging area different from the working directory and the repository? What value do you think it offers?
+Thoughts2:	It is thing in between, usefull for choosing files and displaying them easily.
