@@ -3,3 +3,35 @@ Thoughts1:	It creates a folder and probably it´s metadata, that everything is c
 
 Question2:	How is the staging area different from the working directory and the repository? What value do you think it offers?
 Thoughts2:	It is thing in between, usefull for choosing files and displaying them easily.
+
+Question3:	How can you use the staging area to make sure you have one commit per logical change?
+Thoughts3:	Adding just documents of the same logical change.
+
+Question4:	What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Thoughts4:	If you want to try a feature, which you don´t wan to fit in as an update at the time or try to portate the program
+			to another language you can use separate branches to have a clean master or main program.
+
+Question5:	How do the diagrams help you visualize the branch structure?
+Thoughts5:	In the diagramm one can see at which point branches split up. So you actually can draw a tree straight forward.
+
+Question6:	What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Thoughts6:	Result is one branch with all the commits sorted in one row in the log. The graph structure is alike before the merge.
+
+Question7:	What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Thoughts7:	Automatic merging saves a lot of time compared to doing merges manually. 
+
+
+Commands: 
+ 
+git add  |    Add a file to the staging area 
+git commit  |    Commit the files from the staging area to the repository  
+git status  |    Show which files are in the staging area, and which files from the working directory are not part of the repository     
+git diff  |    Git diff without arguments is comparing the working directory with the staging area 
+git diff --staged  |    Compare the staging area with the repository 
+git reset --hard  |    Undo all changes! There is no rollback for this, so be carefull! 
+git checkout master  |    Restore the "Head" to the latest check-in (this will be part of a later lesson/module) 
+git log --graph --oneline <branch1> <branch2>  |    Show a visual representation of the commit history within different branches 
+git checkout -b new_branch_name  |    Creates a new branch and do a checkout on this branch in one call instead of git branch new_branch_name and git checkout new_branch_name 
+git merge branch1 branch2  |    Merge two branches, branch2 get merged into branch1 
+git branch -d name  |    Remove the branch with the specified name 
+git show commitId  |    Show the changes made in this commit compared to the previous version. This is working even after merging. 
